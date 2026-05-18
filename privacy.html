@@ -3,78 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mreminder 隱私權政策</title>
+  <title>mreminder Privacy Policy</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 24px;
-      color: #333;
-      line-height: 1.8;
-    }
-    h1 { color: #1a73e8; font-size: 28px; margin-bottom: 8px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 24px; color: #333; line-height: 1.8; }
+    h1 { color: #FF3347; font-size: 28px; margin-bottom: 8px; }
     h2 { color: #333; font-size: 18px; margin-top: 36px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+    h3 { color: #444; font-size: 16px; margin-top: 24px; }
     p, li { color: #555; }
     ul { padding-left: 20px; }
     .updated { color: #888; font-size: 14px; margin-bottom: 40px; }
-    .highlight { background: #f0f7ff; border-left: 4px solid #1a73e8; padding: 16px 20px; border-radius: 4px; margin: 24px 0; }
+    .highlight { background: #fff4f4; border-left: 4px solid #FF3347; padding: 16px 20px; border-radius: 4px; margin: 24px 0; }
+    .lang-switch { background: #f4f4f4; padding: 12px 16px; border-radius: 4px; margin-bottom: 24px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; }
+    th { background: #f9f9f9; }
     footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee; font-size: 13px; color: #888; }
   </style>
 </head>
 <body>
+  <h1>mreminder 隱私權政策 / Privacy Policy</h1>
+  <p class="updated">最後更新 / Last updated: 2026-05-17</p>
+  <div class="lang-switch"><a href="#zh-TW">繁體中文</a> · <a href="#en">English</a></div>
 
-  <h1>mreminder 隱私權政策</h1>
-  <p class="updated">最後更新：2026 年 5 月 13 日</p>
+  <section id="zh-TW">
+    <h2>繁體中文版</h2>
+    <div class="highlight"><strong>重點摘要</strong><br/>mreminder 是離線優先的鬧鐘 App，您建立的鬧鐘資料只儲存在您的裝置本機，我們沒有伺服器接收這些資料。為了確保 App 穩定性與營運，我們使用少量第三方服務收集當機紀錄、廣告 ID 與購買憑證（詳見下方）。</div>
+    <h2>1. 我們收集哪些資料</h2>
+    <h3>1.1 您在 App 內建立的資料（不收集）</h3>
+    <p>所有鬧鐘設定（時間、標籤、重複週期、震動、貪睡設定）僅儲存於您的裝置本機 SQLite 資料庫。我們沒有後端伺服器，不會接收或備份這些資料。</p>
+    <h3>1.2 透過第三方服務收集的資料</h3>
+    <table>
+      <thead><tr><th>資料類型</th><th>用途</th><th>處理服務</th><th>是否可選</th></tr></thead>
+      <tbody>
+        <tr><td>當機紀錄、堆疊追蹤、裝置型號 / OS 版本</td><td>修正 App 錯誤、改善穩定性</td><td>Firebase Crashlytics（Google）</td><td>否（自動）</td></tr>
+        <tr><td>App 互動事件（畫面開啟、功能使用）</td><td>了解使用模式、改善 UX</td><td>Firebase Analytics（Google）</td><td>否（自動）</td></tr>
+        <tr><td>廣告 ID（Advertising ID）</td><td>顯示插頁式廣告</td><td>Google AdMob</td><td>是（購買 NT$120 移除廣告即停止）</td></tr>
+        <tr><td>購買憑證（receipt token）</td><td>驗證購買、跨裝置還原</td><td>RevenueCat + Google Play Billing</td><td>否（僅在您主動購買時）</td></tr>
+      </tbody>
+    </table>
+    <p><strong>我們不收集</strong>：姓名、電子郵件、電話、位置、聯絡人、相簿、麥克風、相機、瀏覽紀錄、登入帳號、任何識別個人身分的資訊。</p>
+    <h2>2. 資料安全</h2>
+    <p>所有資料傳輸均透過 HTTPS / TLS 加密。本地資料庫無加密但保存於 App 私有沙箱（Android 系統強制隔離）。</p>
+    <h2>3. 您的權利與資料刪除</h2>
+    <h3>3.1 App 內刪除（推薦）</h3>
+    <p>進入 App → 設定 → <strong>刪除帳號與資料</strong>，會清除所有鬧鐘設定、待觸發通知、主畫面小工具資料。</p>
+    <h3>3.2 第三方服務的資料</h3>
+    <ul>
+      <li>Crashlytics / Analytics：解除安裝 App 並重置裝置廣告 ID 後，Google 會在 60 天內自動刪除關聯資料</li>
+      <li>AdMob：Android 設定 → Google → 廣告 → 刪除廣告 ID，即可斷開關聯</li>
+      <li>RevenueCat 購買紀錄：請寄信至 cjc305@gmail.com 申請刪除</li>
+    </ul>
+    <h2>4. 權限說明</h2>
+    <table>
+      <thead><tr><th>權限</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td>POST_NOTIFICATIONS</td><td>顯示鬧鐘響起通知</td></tr>
+        <tr><td>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</td><td>精準排程鬧鐘</td></tr>
+        <tr><td>USE_FULL_SCREEN_INTENT</td><td>鬧鐘響起時在鎖屏顯示全螢幕介面</td></tr>
+        <tr><td>RECEIVE_BOOT_COMPLETED</td><td>裝置重開機後重新排程鬧鐘</td></tr>
+        <tr><td>WAKE_LOCK</td><td>鬧鐘觸發時喚醒螢幕</td></tr>
+        <tr><td>VIBRATE</td><td>鬧鐘震動</td></tr>
+        <tr><td>FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK</td><td>循環播放鬧鐘音效</td></tr>
+        <tr><td>SYSTEM_ALERT_WINDOW</td><td>確保 Samsung One UI、小米 MIUI 等廠商裝置能可靠顯示鬧鐘介面</td></tr>
+        <tr><td>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</td><td>避免裝置 Doze 省電模式延遲鬧鐘觸發</td></tr>
+        <tr><td>ACCESS_NOTIFICATION_POLICY</td><td>讓鬧鐘可在「勿擾模式」下響起</td></tr>
+        <tr><td>INTERNET / ACCESS_NETWORK_STATE</td><td>AdMob 廣告載入、Crashlytics 上傳</td></tr>
+        <tr><td>READ_EXTERNAL_STORAGE（僅 Android 12 及以下）</td><td>讀取自訂鬧鐘音效</td></tr>
+      </tbody>
+    </table>
+    <h2>5. 廣告與付費</h2>
+    <p>免費版本會在使用者關閉每第 5 次鬧鐘後顯示一則 Google AdMob 插頁式廣告。AdMob 會使用您的廣告 ID 來顯示相關廣告。付費 NT$120（一次性買斷）即可永久移除所有廣告，並停止傳送廣告 ID 至 Google AdMob。</p>
+    <h2>6. 兒童隱私</h2>
+    <p>本 App 不針對 13 歲以下兒童設計。</p>
+    <h2>7. 政策變更</h2>
+    <p>本政策若有重大變更，將更新上方「最後更新」日期。建議您定期回來查閱。</p>
+    <h2>8. 聯絡我們</h2>
+    <p>有任何疑問或資料刪除請求，請寄信：<a href="mailto:cjc305@gmail.com">cjc305@gmail.com</a></p>
+  </section>
 
-  <div class="highlight">
-    <strong>重點摘要：</strong>mreminder 不會收集、儲存或分享任何個人資料。所有資料均儲存在您的裝置本機，不會上傳至任何伺服器。
-  </div>
+  <hr style="margin: 60px 0; border: none; border-top: 1px solid #ddd;" />
 
-  <h2>1. 我們收集哪些資料</h2>
-  <p>mreminder 應用程式<strong>不收集任何個人識別資料</strong>，包括但不限於：</p>
-  <ul>
-    <li>姓名、電子郵件地址或其他聯絡資訊</li>
-    <li>位置資訊</li>
-    <li>裝置識別碼</li>
-    <li>使用行為數據或分析資料</li>
-    <li>第三方帳號資訊</li>
-  </ul>
+  <section id="en">
+    <h2>English version</h2>
+    <div class="highlight"><strong>TL;DR</strong><br/>mreminder is an offline-first alarm app. Your alarms are stored only on your device; we have no servers receiving them. We use a small set of third-party services to collect crash logs, advertising ID and purchase receipts (see below).</div>
+    <h2>1. Data we collect</h2>
+    <h3>1.1 In-app data (not collected)</h3>
+    <p>All alarm configurations (time, label, repeat, vibration, snooze) are stored solely in your device local SQLite database. We have no backend server.</p>
+    <h3>1.2 Data collected via third parties</h3>
+    <table>
+      <thead><tr><th>Data type</th><th>Purpose</th><th>Processor</th><th>Opt-out</th></tr></thead>
+      <tbody>
+        <tr><td>Crash logs, stack traces, device model / OS</td><td>Bug fixing and stability</td><td>Firebase Crashlytics (Google)</td><td>No</td></tr>
+        <tr><td>App interaction events</td><td>Understand usage patterns</td><td>Firebase Analytics (Google)</td><td>No</td></tr>
+        <tr><td>Advertising ID</td><td>Show interstitial ads</td><td>Google AdMob</td><td>Yes - buy NT$120 IAP to remove ads</td></tr>
+        <tr><td>Purchase receipt token</td><td>Verify purchase, restore across devices</td><td>RevenueCat + Google Play Billing</td><td>Only when you make a purchase</td></tr>
+      </tbody>
+    </table>
+    <p><strong>We do NOT collect</strong>: name, email, phone, location, contacts, photos, microphone, camera, browsing history, login credentials, or any personally identifiable information.</p>
+    <h2>2. Data security</h2>
+    <p>All network traffic is encrypted via HTTPS / TLS. The local database is unencrypted but stored in Android app-private sandbox.</p>
+    <h2>3. Your rights and data deletion</h2>
+    <h3>3.1 In-app deletion (recommended)</h3>
+    <p>Go to App, then Settings, then "Delete account and data". This wipes all local alarms, scheduled notifications, and widget data.</p>
+    <h3>3.2 Third-party data</h3>
+    <ul>
+      <li>Crashlytics / Analytics: uninstall + reset Advertising ID; Google deletes within 60 days.</li>
+      <li>AdMob: Android Settings, then Google, then Ads, then Delete advertising ID.</li>
+      <li>RevenueCat purchase records: email cjc305@gmail.com to request deletion.</li>
+    </ul>
+    <h2>4. Permissions</h2>
+    <p>See section 4 above (zh-TW) for the full permissions table - same content.</p>
+    <h2>5. Ads and purchases</h2>
+    <p>The free tier shows a Google AdMob interstitial after every 5th alarm dismissal. AdMob uses your Advertising ID to serve relevant ads. A one-time NT$120 in-app purchase permanently removes all ads and stops sharing the Advertising ID with AdMob.</p>
+    <h2>6. Children privacy</h2>
+    <p>This app is not directed to children under 13.</p>
+    <h2>7. Changes to this policy</h2>
+    <p>We will update the "Last updated" date above for material changes.</p>
+    <h2>8. Contact</h2>
+    <p>For any questions or data deletion requests: <a href="mailto:cjc305@gmail.com">cjc305@gmail.com</a></p>
+  </section>
 
-  <h2>2. 資料儲存位置</h2>
-  <p>您在應用程式中建立的所有提醒事項與設定，均<strong>僅儲存於您的裝置本機</strong>。我們沒有伺服器，也不會接收任何來自您裝置的資料。</p>
-
-  <h2>3. 第三方服務</h2>
-  <p>mreminder 不整合任何第三方分析工具、廣告網路或追蹤服務。</p>
-
-  <h2>4. 權限說明</h2>
-  <p>應用程式可能請求以下裝置權限，僅用於核心功能：</p>
-  <ul>
-    <li><strong>通知（POST_NOTIFICATIONS）</strong>：用於在設定時間發送提醒通知</li>
-    <li><strong>排程精確鬧鐘（SCHEDULE_EXACT_ALARM）</strong>：確保提醒在正確時間觸發</li>
-  </ul>
-  <p>以上權限不會用於收集資料，且僅在您明確授權後才會使用。</p>
-
-  <h2>5. 兒童隱私</h2>
-  <p>本應用程式不針對 13 歲以下兒童設計，亦不會有意收集兒童的個人資料。</p>
-
-  <h2>6. 隱私權政策變更</h2>
-  <p>若本政策有任何變更，我們將更新本頁面上的「最後更新」日期。建議您定期查閱本政策。</p>
-
-  <h2>7. 聯絡我們</h2>
-  <p>如對本隱私權政策有任何疑問，歡迎透過以下方式聯絡：</p>
-  <ul>
-    <li>電子郵件：<a href="mailto:cjc305@gmail.com">cjc305@gmail.com</a></li>
-  </ul>
-<h2>資料刪除 / Data Deletion</h2>
-<p>本 App 不需要帳號註冊。所有資料儲存於您的裝置本機。</p>
-<p>如要刪除所有資料，請在 App 內前往「設定 → 刪除帳號與資料」。</p>
-<p>This app does not require account registration. All data is stored locally on your device. To delete all data, go to "Settings → Delete account and data" inside the app.</p>
-<p>如有疑問請聯絡 / Contact: cjc305@gmail.com</p>
-  <footer>
-    © 2026 mreminder. 保留一切權利。<br/>
-    <a href="privacy.html">隱私權政策</a>
-  </footer>
-
+  <footer>(C) 2026 mreminder | <a href="privacy.html">Privacy Policy</a></footer>
 </body>
 </html>
